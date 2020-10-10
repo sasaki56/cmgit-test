@@ -16,5 +16,5 @@ jobs:
         ref: 'develop'        
     - name: sync
       env: 
-        GITHUB_CONTEXT: ${{ AMSGIT_REPOSITORY) }}
+        AMSGIT_REPOSITORY: ${{ AMSGIT_REPOSITORY) }}
       run: echo "$AMSGIT_REPOSITORY"
