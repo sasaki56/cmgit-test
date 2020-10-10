@@ -1,0 +1,20 @@
+name: workflow-name
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: '0'
+        ref: 'develop'        
+    - name: sync
+      env: 
+        GITHUB_CONTEXT: ${{ AMSGIT_REPOSITORY) }}
+      run: echo "$AMSGIT_REPOSITORY"
