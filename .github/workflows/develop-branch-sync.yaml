@@ -16,5 +16,5 @@ jobs:
         ref: 'develop'        
     - name: sync
       env: 
-        AMSGIT_REPOSITORY: ${{ AMSGIT_REPOSITORY) }}
+        AMSGIT_REPOSITORY: ${{ secrets.AMSGIT_REPOSITORY) }}
       run: echo "$AMSGIT_REPOSITORY"
