@@ -1,10 +1,11 @@
 name: workflow-name
-  push:
-    branches:
-    - develop
+
+on:
+  pull:
+    branches: [ develop ]
   pull_request:
-    branches:
-    - develop
+    branches: [ develop ]
+
 jobs:
   build:
     name: Greeting
