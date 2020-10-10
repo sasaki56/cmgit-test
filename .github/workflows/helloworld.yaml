@@ -1,5 +1,10 @@
 name: workflow-name
-on: push
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
 
 jobs:
   build:
@@ -7,4 +12,4 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Hello World
-        run: echo "Hello World"
+        run: echo "main"
