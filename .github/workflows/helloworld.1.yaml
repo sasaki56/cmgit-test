@@ -5,7 +5,6 @@ name: workflow-name
   pull_request:
     branches:
     - develop
-
 jobs:
   build:
     name: Greeting
